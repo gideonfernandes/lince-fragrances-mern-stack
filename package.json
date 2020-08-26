@@ -1,0 +1,38 @@
+{
+  "name": "lince-fragrances-mern-stack",
+  "version": "1.0.0",
+  "description": "This project is a Full Stack MERN Application that an user register an account and will be able to select perfumes at the ecommerce's list and purchase the items.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "clientinstall": "npm install --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gideonfernandes/lince-fragrances-mern-stack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gideonfernandes/lince-fragrances-mern-stack/issues"
+  },
+  "homepage": "https://github.com/gideonfernandes/lince-fragrances-mern-stack#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.25",
+    "yup": "^0.29.3"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4"
+  }
+}
