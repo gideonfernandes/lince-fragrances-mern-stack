@@ -1,47 +1,80 @@
-# contact-keeper
+# lince-fragrances-mern-stack
 
 ## Project
 
-***EN:*** This project is a Full Stack MERN Application that an user register an account and will be able to create and keep contacts  with some informations like name, email, phone number, personal or professional contact and also filter, update or delete them. It was developed with the aim of studying the React JS library during the React Front To Back course, taught by Brad Traversy.
+***EN:*** As a practical challenge proposed by the technology company Lince Net I developed this project which is basically a small ecommerce developed with Node.js on the backend and ReactJS on the frontend where it is possible for the user to create their account and select the desired items in the product list and make your purchase. It has features such as user registration, user login, shopping cart with values, quantities and products updated dynamically according to the user's actions, etc ...
 
-***PT-BR:*** Este projeto é um aplicativo MERN Full Stack em que um usuário registra uma conta e poderá criar e manter contatos com algumas informações como nome, email, número de telefone, contato pessoal ou profissional e também filtrá-los, atualizá-los ou excluí-los. Foi desenvolvido com o objetivo de estudar a biblioteca React JS durante o curso React Front To Back, ministrado por Brad Traversy.
-
-## Technologies
+***PT-BR:*** Como um desafio prático proposto pela empresa de tecnologia Lince Net desenvolvi este projeto que é basicamente um pequeno ecommerce desenvolvido com Node.js no backend e ReactJS no frontend onde é possível ao usuário criar sua conta e selecionar os itens desejados na lista de produtos e efetuar a sua compra. Possui funcionalidades como cadastro de usuário, login de usuário, carrinho de compras com valores, quantidades e produtos atualizados dinamicamente de acordo com as ações do usuário, etc ...
 
 This project was developed with the following technologies:
 
-- HTML
-- CSS
+- Node.js
+- Express.js
+- MongoDB & Mongoose
+- Yup
+- JWT & bcryptjs
 - ReactJS
-- NodeJS
-- Express
-- MongoDB
+- Styled Components
+- Axios
+- React Toastify
+- Redux & Redux Saga
+- {...}
 ***
 
-## Preview
-![preview](preview.png)
+## Preview Web
+![preview-web](preview.png)
 ***
 
-## How To Install
+### How To Install
 
-In the project directory, run:
+To clone and run this application, you'll need Git, Node.js & NPM/Yarn installed on your computer.
 
-### `npm install`
-#### Install backend API with all dependencies. <br /> <br />
+From your command line:
 
-And in the project directory, access the client folder and then run:
+#### Install Lince Fragrances API 
 
-### `npm install`
-#### Install react app with all dependencies. <br /> <br />
+```bash
+# Clone this repository
+$ git clone https://github.com/gideonfernandes/lince-fragrances-mern-stack.git
 
+# Go into the repository
+$ cd lince-fragrances-mern-stack
 
-And finally run the command in the project directory (not in the client folder):
+# Install dependencies
+$ yarn install
 
-### `npm run dev`
-#### Runs the backend API and the react app concurrently in the development mode. <br /> <br />
+# Start server
+$ yarn server
 
+# running on port 8888
+```
 
-## License
+#### Install Lince Fragrances Web Client
+
+```bash
+# Go into the repository
+$ cd lince-fragrances-mern-stack/client
+
+# Install dependencies
+$ yarn install
+
+# Run
+$ yarn start
+
+# running on port 3000
+```
+
+#### Start API and client simultaneously
+```bash
+# # After installing them go into the repository
+$ cd lince-fragrances-mern-stack
+
+# Run
+$ yarn dev
+
+# Running API on port 8888 & running client on port 3000
+```
+
+### License
 
 This project is under the MIT license.
-
