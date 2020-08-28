@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { darken } from 'polished';
 
 export const LoadContainer = styled.div`
-  width: 960px;
+  width: 100%;
   height: 300px;
   margin: 3rem auto 0 auto;
   display: flex;
@@ -79,5 +79,23 @@ export const Products = styled.ul`
         font-family: Arial !important;
       }
     }
+  }
+
+  @media only screen and (max-width: 970px) {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 4rem;
+  }
+
+  @media only screen and (max-width: 860px) {
+    padding: 3rem;
+  }
+
+  @media only screen and (max-width: 670px) {
+    grid-template-columns: 1fr;
+    padding: 5rem;
+  }
+
+  @media only screen and (max-width: 560px) {
+    padding: 1.5rem;
   }
 `;

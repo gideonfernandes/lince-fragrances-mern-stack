@@ -1,14 +1,14 @@
 {
   "name": "lince-fragrances-mern-stack",
   "version": "1.0.0",
-  "description": "This project is a Full Stack MERN Application that an user register an account and will be able to select perfumes at the ecommerce's list and purchase the items.",
+  "description": "As a practical challenge proposed by the technology company Lince Net I developed this project which is basically a small ecommerce developed with Node.js on the backend and ReactJS on the frontend where it is possible for the user to create their account and select the desired items in the product list and make your purchase.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
-    "clientinstall": "npm install --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install:app": "npm install && npm install --prefix client",
+    "init:app": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "repository": {

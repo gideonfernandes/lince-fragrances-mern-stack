@@ -28,4 +28,10 @@ export default createGlobalStyle`
   button {
     cursor: pointer;
   }
+
+  @media only screen and (max-width: 768px) {
+    body, input, button {
+      font: 12px Roboto, sans-serif;
+    }
+  }
 `;

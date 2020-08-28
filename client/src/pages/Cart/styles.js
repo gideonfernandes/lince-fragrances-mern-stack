@@ -16,6 +16,14 @@ export const Container = styled.div`
   background: #FFF;
   border-radius: 4px;
 
+  @media only screen and (max-width: 970px) {
+    width: 100%;
+    overflow-x: auto;
+    margin: -2rem auto 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+
   footer {
     margin-top: 30px;
     display: flex;

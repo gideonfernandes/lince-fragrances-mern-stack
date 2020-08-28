@@ -15,4 +15,10 @@ export const FooterComponent = styled.footer`
     font-size: 1.1rem;
     font-style: italic;
   }
+
+  @media only screen and (max-width: 560px) {
+    p {
+      font-size: 0.75rem;
+    }
+  }
 `;

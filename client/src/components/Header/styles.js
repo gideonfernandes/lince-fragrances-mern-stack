@@ -11,6 +11,15 @@ export const Container = styled.header`
 
   svg {
     cursor: pointer;
+    margin-right: 0.6rem;
+  }
+
+  @media only screen and (max-width: 560px) {
+    flex-direction: column;
+
+    svg {
+      margin-bottom: 3rem;
+    }
   }
 `;
 
@@ -37,6 +46,22 @@ export const Cart = styled(Link)`
     span {
       font-size: 1.2rem;
       color: #999;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    div {
+      margin-right: 0.6rem;
+
+      strong {
+        font-size: 0.9rem
+      }
+    }
+  }
+
+  @media only screen and (max-width: 560px) {
+    div {
+      margin: 0.7rem 0.7rem 2rem 0.7rem;
     }
   }
 `;

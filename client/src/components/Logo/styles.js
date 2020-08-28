@@ -8,12 +8,18 @@ export const LogoLink = styled(Link)`
     margin: 3rem 10px;
 
     p {
-    	font-style: italic;
-    	font-weight: 400;
+        font-style: italic;
+        font-weight: 400;
     }
 
     p > span{
-    	font-family: Srisakdi, sans-serif;
-    	font-weight: 300;
+        font-family: Srisakdi, sans-serif;
+        font-weight: 300;
     }
+
+    @media only screen and (max-width: 768px) {
+        font-size: 2rem;
+        margin: 2rem 8px;
+    }
+  }
 `;
